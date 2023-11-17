@@ -1,0 +1,66 @@
+.userProfile {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  padding: 20px;
+
+  .avatarContainer {
+    margin: 10px 20px 0 0;
+    width: 40px;
+    height: 40px;
+
+    .avatarImg {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+
+  .infoContainer {
+    flex: 1;
+
+    .nameText {
+      margin-right: 10px;
+      color: #031727;
+      font-family: 'Poppins';
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+
+    .jobText {
+      color: #969696;
+      font-family: 'Poppins';
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+
+    .locationText {
+      margin: 0 15px 11px;
+      color: #969696;
+      font-family: 'Poppins';
+      font-size: 11px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    .emailText {
+      margin-left: 10px;
+      color: #969696;
+      font-family: 'Poppins';
+      font-size: 11px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+
+  .menuButtonContainer {
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,123 @@
+.list {
+  height: 100%;
+
+  .loaderWrapper {
+    text-align: center;
+
+    .loader {
+      color: blue;
+    }
+  }
+
+  .errorWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .error {
+      padding: 5px;
+      width: 80%;
+      text-align: center;
+      color: red;
+      background-color: var(--white);
+      border-radius: 4px;
+    }
+  }
+
+  .carouselContainer {
+    padding: 20px 30px 20px 20px;
+    overflow: auto;
+    white-space: nowrap;
+    position: sticky;
+    top: 0;
+    background-color: var(--white);
+
+    .carouselImgContainer {
+      display: inline-block;
+      margin-right: 10px;
+      width: 140px;
+      height: 100px;
+
+      .carouselImg {
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+      }
+    }
+
+    .activeCarouselImgContainer {
+      padding: 5px;
+      position: relative;
+      display: inline-block;
+      margin-right: 10px;
+      width: 180px;
+      height: 140px;
+      background: #f89f1e;
+      border-radius: 20px;
+
+      .carouselImg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 80%;
+        width: 100%;
+        border-radius: 20px;
+        object-fit: cover;
+      }
+    }
+
+    .albumTitleText {
+      position: absolute;
+      padding: 0 5px;
+      left: 0;
+      bottom: 15px;
+      width: 100%;
+      color: var(--white);
+      font-family: 'Poppins';
+      font-size: 11px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 13px;
+    }
+  }
+
+  .col {
+    padding-bottom: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    .firstCol,
+    .secondCol {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .firstCol {
+      margin: 0 5px 0 20px;
+    }
+
+    .secondCol {
+      margin: 0 20px 0 5px;
+    }
+  }
+}
+
+.img {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.shortImgContainer {
+  margin: 5px 0;
+  height: 100px;
+}
+
+.tallImgContainer {
+  margin: 5px 0;
+  height: 200px;
+}
